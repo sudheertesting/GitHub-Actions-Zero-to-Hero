@@ -1,0 +1,14 @@
+name: Hello World Example
+
+# The event that triggers the automation
+on: [push]
+
+jobs:
+  say-hello:
+    # Specifies the virtual operating system
+    runs-on: ubuntu-latest
+
+    steps:
+      # A single step running a standard terminal command
+      - name: Run Greeting
+        run: echo "Hello, GitHub Actions is working!"
